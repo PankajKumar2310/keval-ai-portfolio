@@ -71,7 +71,7 @@ export default function Header() {
                                     />
                                 </div>
                             </Link>
-                            <div className="mean__menu-wrapper">
+                            <div className="mean__menu-wrapper d-none d-xl-block">
                                 <div className="main-menu">
                                     <nav id="mobile-menu">
                                         <ul>
@@ -213,9 +213,8 @@ export default function Header() {
                 </div>
             </div>
             <div
-                className={`offcanvas__overlay ${
-                    isOffcanvasOpen ? "overlay-open" : ""
-                }`}
+                className={`offcanvas__overlay ${isOffcanvasOpen ? "overlay-open" : ""
+                    }`}
                 onClick={closeOffcanvas}
             >
                 {" "}

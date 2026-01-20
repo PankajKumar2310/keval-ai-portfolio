@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BackToTop from '@/components/BackToTop';
 import ChallengesSection from '@/components/ChallengesSection';
+import ClientOnly from '@/components/ClientOnly';
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -18,25 +19,25 @@ export default function AboutPage() {
         counters.forEach((counter) => {
           const target = parseInt(counter.getAttribute('data-target') || '0');
           const parentText = counter.parentElement?.textContent || '';
-          
+
           // Determine prefix and suffix from parent element
           let prefix = '';
           let suffix = '';
-          
+
           // Check if parent has '+' before the counter
           if (parentText.includes('+') && counter.textContent && !counter.textContent.startsWith('+')) {
             prefix = '+';
           } else if (counter.textContent && counter.textContent.startsWith('+')) {
             prefix = '+';
           }
-          
+
           // Check for suffix after counter
           if (parentText.includes('%')) {
             suffix = '%';
           } else if (parentText.includes('M')) {
             suffix = ' M';
           }
-          
+
           const duration = 2000;
           let current = 0;
           const increment = target / (duration / 16);
@@ -44,7 +45,7 @@ export default function AboutPage() {
 
           const updateCounter = () => {
             if (hasAnimated) return;
-            
+
             current += increment;
             if (current < target) {
               counter.textContent = prefix + Math.floor(current).toString();
@@ -76,43 +77,44 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <>
+    <ClientOnly>
       <Header />
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
           {/* Breadcrumb-wrapper Start */}
           <div
-            className="breadcrumb-wrapper bg-cover"
+            className="breadcrumb-wrapper bg-cover hero-mobile-wrap"
             style={{
               backgroundImage: "url('/assets/keval-image/about-hero-banner.png')",
             }}
           >
             <div className="container">
               <div className="page-heading">
-                <div className="breadcrumb-sub-title">
-                  <h1 className="wow fadeInUp" data-wow-delay=".3s">
+                <div className="breadcrumb-sub-title text-start">
+                  <h1 className="wow fadeInUp" data-wow-delay=".3s" style={{ fontSize: 'clamp(2.5rem, 10vw, 4rem)', fontWeight: 'bold' }}>
                     about us
                   </h1>
-                </div>
-                <ul className="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                   <ul className="breadcrumb-items wow fadeInUp text-start" data-wow-delay=".5s">
                   <li>
                     <Link href="/">
-                      <i className="fa-regular fa-house"></i>
+                     <i className="fa-regular fa-house text-white" style={{ color: "#fff" }}></i>
                       Home
                     </Link>
                   </li>
                   <li>
-                    <i className="fa-solid fa-slash-forward"></i>
+                    <i className="fa-solid fa-slash-forward text-white" style={{ color: "#fff" }}></i>
                   </li>
                   <li>About us</li>
                 </ul>
+                </div>
+               
               </div>
             </div>
           </div>
 
           {/* About Section Start */}
-          <section 
+          <section
             className="about-section-2 fix section-padding"
             style={{ backgroundColor: '#ffffff' }}
           >
@@ -121,10 +123,10 @@ export default function AboutPage() {
               >
                 <div className="row g-4">
                   <div className="col-lg-6">
-                    <div className="about-content">
+                    <div className="about-content text-start text-lg-start">
                       <h6 className="wow fadeInUp">about us</h6>
-                      <p 
-                        className="wow fadeInUp" 
+                      <p
+                        className="wow fadeInUp"
                         data-wow-delay=".3s"
                         style={{ color: '#2F4F4F', fontWeight: 'normal' }}
                       >
@@ -138,7 +140,7 @@ export default function AboutPage() {
                         ideas, then scale what works. The outcome is less manual
                         work, more visibility, and growth you can measure.
                       </p>
-                      <ul className="about-list wow fadeInUp" data-wow-delay=".5s">
+                      <ul className="about-list wow fadeInUp d-inline-block text-start ps-0" data-wow-delay=".5s">
                         <li>
                           <i className="fa-regular fa-arrow-up-right"></i>
                           Convert more buyers with optimized storefronts
@@ -167,31 +169,33 @@ export default function AboutPage() {
                           }
                         }
                       `}</style>
-                      <Link href="/about" className="theme-btn wow fadeInUp" data-wow-delay=".3s">
-                        <span className="icon-1">
-                          <Image
-                            src="/assets/img/icon/10.svg"
-                            alt="img"
-                            width={20}
-                            height={20}
-                          />
-                        </span>
-                        reach out
-                        <span className="icon-2">
-                          <Image
-                            src="/assets/img/icon/11.svg"
-                            alt="img"
-                            width={20}
-                            height={20}
-                          />
-                        </span>
-                      </Link>
+                      <div className="d-flex justify-content-center justify-content-lg-start">
+                        <Link href="/about" className="theme-btn wow fadeInUp" data-wow-delay=".3s">
+                          <span className="icon-1">
+                            <Image
+                              src="/assets/img/icon/10.svg"
+                              alt="img"
+                              width={20}
+                              height={20}
+                            />
+                          </span>
+                          reach out
+                          <span className="icon-2">
+                            <Image
+                              src="/assets/img/icon/11.svg"
+                              alt="img"
+                              width={20}
+                              height={20}
+                            />
+                          </span>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="about-content-2">
-                      <h2 
-                        className="wow fadeInUp about-heading-2" 
+                      <h2
+                        className="wow fadeInUp about-heading-2 text-center text-lg-start"
                         data-wow-delay=".3s"
                       >
                         Comprehensive Digital Solutions for Growing Businesses
@@ -203,18 +207,18 @@ export default function AboutPage() {
                           line-height: 1.6 !important;
                         }
                       `}</style>
-                      <div className="counter-items">
-                        <div className="content wow fadeInUp" data-wow-delay=".3s">
-                          <h2 style={{ fontSize: 'clamp(48px, 8vw, 72px)', fontWeight: 'normal', lineHeight: '1' }}>
+                      <div className="counter-items row g-0 text-center text-lg-start d-flex flex-row flex-nowrap">
+                        <div className="content col-6 col-lg-auto wow fadeInUp" data-wow-delay=".3s">
+                          <h2 style={{ fontSize: 'clamp(32px, 8vw, 72px)', fontWeight: 'normal', lineHeight: '1' }}>
                             <span className="count" data-target="150">+150</span>%
                           </h2>
-                          <p>Conversion Rate Increased</p>
+                          <p style={{ fontSize: 'clamp(12px, 3vw, 18px)' }}>Conversion Rate Increased</p>
                         </div>
-                        <div className="content wow fadeInUp" data-wow-delay=".5s">
-                          <h2 style={{ fontSize: 'clamp(48px, 8vw, 72px)', fontWeight: 'normal', lineHeight: '1' }}>
+                        <div className="content col-6 col-lg-auto wow fadeInUp" data-wow-delay=".5s">
+                          <h2 style={{ fontSize: 'clamp(32px, 8vw, 72px)', fontWeight: 'normal', lineHeight: '1' }}>
                             <span className="count" data-target="20">20</span> M
                           </h2>
-                          <p>Amount of Investments in 2022</p>
+                          <p style={{ fontSize: 'clamp(12px, 3vw, 18px)' }}>Amount of Investments in 2022</p>
                         </div>
                       </div>
                     </div>
@@ -246,20 +250,35 @@ export default function AboutPage() {
                           style={{
                             backgroundImage:
                               "url('/assets/keval-image/miss-viss.jpg')",
+                            backgroundPosition: 'center',
                           }}
                         ></div>
                       </div>
                     </div>
                   </div>
                   <div className="col-xl-4">
-                    <div className="mission-content">
+                    <div className="mission-content text-center text-xl-start px-3 px-sm-4 px-xl-5 py-5">
+                      <style jsx>{`
+                        .mission-content {
+                          overflow: hidden;
+                          word-wrap: break-word;
+                        }
+                        @media (max-width: 575px) {
+                          .mission-content h3 {
+                            font-size: 24px !important;
+                          }
+                          .mission-content p {
+                            font-size: 14px !important;
+                          }
+                        }
+                      `}</style>
                       <div className="header-title wow fadeInUp" data-wow-delay=".3s">
                         <h3>Empowering skills to help you!</h3>
                       </div>
                       <ul className="list-items wow fadeInUp" data-wow-delay=".5s">
                         <li>
                           <div className="content">
-                            <h4>01</h4>
+                            <h4 className="text-center text-xl-start">01</h4>
                             <h3>We Build</h3>
                             <p className="text-black">
                               High-conversion websites, real-time inventory
@@ -271,7 +290,7 @@ export default function AboutPage() {
                         </li>
                         <li>
                           <div className="content">
-                            <h4>02</h4>
+                            <h4 className="text-center text-xl-start">02</h4>
                             <h3>We Automate</h3>
                             <p className="text-black">
                               Sync stock and pricing across locations, trigger
@@ -283,7 +302,7 @@ export default function AboutPage() {
                         </li>
                         <li>
                           <div className="content">
-                            <h4>03</h4>
+                            <h4 className="text-center text-xl-start">03</h4>
                             <h3>You Scale</h3>
                             <p className="text-black">
                               Convert more buyers, close deals quicker, and cut
@@ -304,15 +323,11 @@ export default function AboutPage() {
           {/* Challenges Section */}
           <ChallengesSection />
 
-          {/* Counter Section */}
-          
-
-          {/* Footer */}
           <Footer />
         </div>
       </div>
 
       <BackToTop />
-    </>
+    </ClientOnly>
   );
 }

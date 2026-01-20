@@ -2,7 +2,7 @@
     border-radius: 60px;
     margin: 0 30px;
 
-    @include breakpoint (max-xxl){
+    @include breakpoint (max-xxl) {
         border-radius: 0;
         margin: 0;
     }
@@ -14,12 +14,12 @@
 
         ul {
             .about-list {
-               display: flex;
-               gap: 20px;
+                display: flex;
+                gap: 20px;
 
-               &:not(:last-child){
+                &:not(:last-child) {
                     margin-bottom: 40px;
-               }
+                }
 
                 .icon {
                     color: $white;
@@ -46,12 +46,12 @@
 
     .about-image-items {
         margin-top: 30px;
-        
+
         .about-items {
             .thumb {
                 margin-bottom: 40px;
 
-                @include breakpoint (max-sm){
+                @include breakpoint (max-sm) {
                     margin-bottom: 24px;
                 }
 
@@ -96,7 +96,7 @@
                 font-size: 18px;
                 color: $black;
 
-                &:not(:last-child){
+                &:not(:last-child) {
                     margin-bottom: 10px;
                 }
 
@@ -114,13 +114,17 @@
             @include flex;
             gap: 32px;
 
-            @include breakpoint (max-md){
+            @include breakpoint (max-md) {
                 margin-top: 30px;
             }
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 flex-wrap: wrap;
                 gap: 25px;
+
+                @include breakpoint (max-md) {
+                    gap: 0 !important;
+                }
             }
 
             .content {
@@ -144,8 +148,8 @@
         margin-top: 60px;
         border-radius: 20px;
         position: relative;
-       overflow: hidden;
-       text-align: center;
+        overflow: hidden;
+        text-align: center;
 
         .video-icon {
             width: 120px;
@@ -165,9 +169,9 @@
             h6 {
                 color: $theme-color;
             }
-    
+
             .about-list {
-    
+
                 li {
                     i {
                         color: $theme-color;
@@ -190,7 +194,7 @@
 
 .mission-wrapper {
     .mission-image-items {
-        margin-top: 30px; 
+        margin-top: 30px;
         border: 6px solid $white;
         padding: 30px 35px;
         border-radius: 20px;
@@ -199,21 +203,21 @@
             height: 768px;
             overflow: hidden;
             border-radius: 20px;
-    
-            @include breakpoint (max-xl){
+
+            @include breakpoint (max-xl) {
                 height: 750px;
             }
-    
-            @include breakpoint (max-md){
+
+            @include breakpoint (max-md) {
                 height: 550px;
                 padding: 30px;
             }
-    
-            @include breakpoint (max-sm){
+
+            @include breakpoint (max-sm) {
                 height: 450px;
                 padding: 20px;
             }
-    
+
             img {
                 @include imgw;
                 border-radius: 20px;
@@ -221,7 +225,7 @@
             }
         }
     }
-    
+
 
     .mission-content {
         padding: 40px 30px 0;
@@ -272,11 +276,11 @@
     }
 }
 
-.tags-container > canvas {
+.tags-container>canvas {
     position: relative;
-  }
-  
-  .tags-container {
+}
+
+.tags-container {
     width: 100%;
     height: 400px;
     margin-top: 0vw;
@@ -289,32 +293,32 @@
     border-bottom: 1px solid $border-color-3;
     padding-bottom: 120px;
 
-    @include breakpoint (max-xl){
-       padding-bottom: 100px;
+    @include breakpoint (max-xl) {
+        padding-bottom: 100px;
     }
 
-    @include breakpoint (max-lg){
+    @include breakpoint (max-lg) {
         padding-bottom: 80px;
     }
 
     &.dark-border-style {
         border-bottom: 1px solid rgba(255, 255, 255, 0.20);
     }
-    
+
     .about-image-items {
         margin-left: -106.3%;
         position: relative;
         z-index: 9;
 
-        @include breakpoint (max-xl4){
+        @include breakpoint (max-xl4) {
             margin-left: -80%;
         }
 
-        @include breakpoint (max-xxxl){
+        @include breakpoint (max-xxxl) {
             margin-left: -50%;
         }
 
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             margin-left: 0;
         }
 
@@ -355,6 +359,7 @@
                     position: absolute;
                     top: -3px;
                     left: 13px;
+
                     img {
                         width: initial;
                         height: initial;
@@ -369,7 +374,7 @@
         position: relative;
         z-index: 9;
 
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             margin-left: 0;
         }
 
@@ -387,29 +392,29 @@
             align-items: end;
             justify-content: space-between;
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 flex-wrap: wrap;
                 gap: 30px;
             }
 
             .list-items {
                 margin-top: 30px;
-    
+
                 li {
                     font-size: 18px;
                     font-weight: 500;
                     color: $black;
-    
+
                     i {
                         margin-right: 10px;
                     }
-    
-                    &:not(:last-child){
+
+                    &:not(:last-child) {
                         margin-bottom: 10px;
                     }
                 }
             }
-    
+
             .arrow-icon {
                 display: inline-block;
                 width: 104px;
@@ -418,16 +423,16 @@
                 text-align: center;
                 border: 1px solid $border-color-3;
                 border-radius: 50%;
-    
+
                 img {
                     filter: brightness(0);
                     @include transition;
                     transform: rotate(-45deg);
                 }
-    
+
                 &:hover {
                     background-color: $theme-color-3;
-    
+
                     img {
                         filter: initial;
                         transform: rotate(0);
@@ -447,16 +452,16 @@
                         color: $white;
                     }
                 }
-        
+
                 .arrow-icon {
                     border: 1px solid $white;
-        
+
                     img {
                         filter: initial;
                     }
-        
+
                     &:hover {
-                       border: 1px solid $theme-color-3;
+                        border: 1px solid $theme-color-3;
                     }
                 }
             }
@@ -478,7 +483,7 @@
     .about-thumb {
         margin-left: 20px;
         position: relative;
-            
+
         @include breakpoint (max-xl) {
             margin-left: 0;
         }
@@ -492,10 +497,10 @@
             left: 0;
             z-index: 1;
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 display: none;
-             }
-            
+            }
+
             @include breakpoint (max-md) {
                 left: 0;
                 top: -60px;
@@ -511,11 +516,11 @@
             left: 100px;
             z-index: 2;
 
-            @include breakpoint (max-xxl){
-              left: 50px;
+            @include breakpoint (max-xxl) {
+                left: 50px;
             }
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 display: none;
             }
 
@@ -531,29 +536,29 @@
             margin-left: 200px;
             z-index: 5;
 
-            @include breakpoint (max-xxl){
+            @include breakpoint (max-xxl) {
                 margin-left: 150px;
             }
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 margin-left: 0;
                 display: block;
             }
 
-            @include breakpoint (max-lg){
-               height: 600px;
+            @include breakpoint (max-lg) {
+                height: 600px;
             }
 
-            @include breakpoint (max-sm){
+            @include breakpoint (max-sm) {
                 height: 500px;
             }
 
             img {
                 border-radius: 100px;
 
-                @include breakpoint (max-xl){
-                   @include imgw;
-                   object-fit: cover;
+                @include breakpoint (max-xl) {
+                    @include imgw;
+                    object-fit: cover;
                 }
             }
         }
@@ -562,7 +567,7 @@
     .about-content {
         margin-left: 60px;
 
-        @include breakpoint (max-lg){
+        @include breakpoint (max-lg) {
             margin-left: 0;
         }
 
@@ -570,15 +575,15 @@
             font-size: 90px;
             color: $header-color-2;
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 font-size: 80px;
             }
 
-            @include breakpoint (max-md){
-               font-size: 70px;
+            @include breakpoint (max-md) {
+                font-size: 70px;
             }
 
-            @include breakpoint (max-sm){
+            @include breakpoint (max-sm) {
                 font-size: 50px;
             }
         }
@@ -590,7 +595,7 @@
             text-transform: lowercase;
             margin-top: 30px;
 
-            @include breakpoint (max-sm){
+            @include breakpoint (max-sm) {
                 font-size: 40px;
                 margin-top: 20px;
             }
@@ -619,8 +624,8 @@
                         border-radius: 100px;
                         border: 1px solid #1E1E1E;
 
-                        @include breakpoint (max-xl4) { 
-                            font-size: 20px; 
+                        @include breakpoint (max-xl4) {
+                            font-size: 20px;
                         }
 
                         &:hover {
