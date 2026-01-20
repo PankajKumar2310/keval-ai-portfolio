@@ -30,7 +30,7 @@ export default function Home() {
         if ((window as any).WOW) {
           new (window as any).WOW().init();
         }
-        
+
         // Initialize custom animations if available
         if ((window as any).initCustomAnimations) {
           (window as any).initCustomAnimations();
@@ -40,50 +40,28 @@ export default function Home() {
   }, [pathname]);
 
   return (
-    <>
+    <ClientOnly>
       <Header />
       <main style={{ backgroundColor: '#ffffff' }}>
-        <ClientOnly>
-          <HeroSection />
-        </ClientOnly>
-        <ClientOnly>  6
-          <BrandSection />
-        </ClientOnly>
-        <ClientOnly>
-          <ResetOnRouteChange>
-            <ProjectSection />
-          </ResetOnRouteChange>
-        </ClientOnly>
-        <ClientOnly>
-          <ResetOnRouteChange>
-            <TestimonialSection />
-          </ResetOnRouteChange>
-        </ClientOnly>
-        <ClientOnly>
-          <TechnologiesSection />
-        </ClientOnly>
-        <ClientOnly>
-          <ServicesSection />
-        </ClientOnly>
-        <ClientOnly>
-          <ChallengesSection />
-        </ClientOnly>
-        <ClientOnly>
-          <FeaturesSection />
-        </ClientOnly>
-        <ClientOnly>
-          <CounterSection />
-        </ClientOnly>
-        <ClientOnly>
-          <CalendlySection />
-        </ClientOnly>
-        <ClientOnly>
-          <MarqueeSection />
-        </ClientOnly>
+        <HeroSection />
+        <BrandSection />
+        <ResetOnRouteChange>
+          <ProjectSection />
+        </ResetOnRouteChange>
+        <ResetOnRouteChange>
+          <TestimonialSection />
+        </ResetOnRouteChange>
+        <TechnologiesSection />
+        <ServicesSection />
+        <ChallengesSection />
+        <FeaturesSection />
+        <CounterSection />
+        <CalendlySection />
+        <MarqueeSection />
       </main>
       <Footer />
       <BackToTop />
-    </>
+    </ClientOnly>
   );
 }
 

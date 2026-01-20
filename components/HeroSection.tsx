@@ -18,18 +18,18 @@ export default function HeroSection() {
 
     const type = () => {
       if (!typingRef.current) return;
-      
+
       const currentWord = words[wordIndex];
-      
+
       if (isDeleting) {
         if (charIndex > 0) {
           typingRef.current.textContent = currentWord.substring(0, charIndex - 1);
           charIndex--;
-          timeoutId = setTimeout(type, 50); 
+          timeoutId = setTimeout(type, 50);
         } else {
           isDeleting = false;
           wordIndex = (wordIndex + 1) % words.length;
-          timeoutId = setTimeout(type, 500); 
+          timeoutId = setTimeout(type, 500);
         }
       } else {
         if (charIndex < currentWord.length) {
@@ -54,26 +54,28 @@ export default function HeroSection() {
 
   return (
     <section
-      className="hero-section hero-1 bg-cover"
+      className="hero-section hero-1 bg-cover hero-mobile-wrap"
       style={{
         backgroundImage: "url('/assets/keval-image/banners/Home-Banner.jpg')",
+
       }}
     >
+
       <div className="container-fluid">
-        <div className="row align-items-center mt-5">
-          <div className="col-xl-7 mt-5">
-            <div className="hero-content px-5">
+        <div className="row align-items-start mt-lg-5">
+          <div className="col-xl-7 mt-lg-5">
+            <div className="hero-content px-3 px-lg-5">
               <h1 className="wow fadeInUp my-2" data-wow-delay=".3s" style={{ fontSize: 'clamp(2rem, 7vw, 4rem)', fontWeight: 'bold' }}>
-                  Empowering
-                </h1>
-                <h1 className="wow fadeInUp my-2" data-wow-delay=".3s" style={{ fontSize: 'clamp(2rem, 7vw, 4rem)', fontWeight: 'bold'}}>
-                  Diamond Trade with
-                </h1>
-                <h1 className="wow fadeInUp my-2" data-wow-delay=".3s" style={{ fontSize: 'clamp(2rem, 7vw, 4rem)', fontWeight: 'bold'}}>
-                  <strong ref={typingRef}></strong><span>.</span>
-                </h1>
+                Empowering
+              </h1>
+              <h1 className="wow fadeInUp my-2" data-wow-delay=".3s" style={{ fontSize: 'clamp(2rem, 7vw, 4rem)', fontWeight: 'bold' }}>
+                Diamond Trade with
+              </h1>
+              <h1 className="wow fadeInUp my-2" data-wow-delay=".3s" style={{ fontSize: 'clamp(2rem, 7vw, 4rem)', fontWeight: 'bold' }}>
+                <strong ref={typingRef}></strong><span>.</span>
+              </h1>
             </div>
-            <div className="px-5 d-flex justify-content-start align-items-center gap-3 mt-4">
+            <div className="px-3 px-lg-5 d-flex justify-content-start align-items-center gap-3 mt-4 flex-wrap">
               <div className="header-button">
                 <Link href="/about" className="theme-btn2 border-white">
                   <span className="icon-1"></span>

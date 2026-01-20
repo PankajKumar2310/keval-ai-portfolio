@@ -52,117 +52,123 @@ export default function TestimonialSection() {
       <div className="container">
         <div className="testimonial-wrapper">
           <div className="row g-4 align-items-center">
+            {/* ✅ Left Column (Content) */}
             <div className="col-lg-6">
-              <div className="testimonial-content">
-                <div className="section-title">
-                  <h6 className="wow fadeInUp">testimonials</h6>
-                  <h2 className="text-white tp-char-animation"
-                  style = {{
-                    fontSize: '48px',
-                    font: 'bold'
-                  }}>
+              <div className="testimonial-content d-flex flex-column">
+                <div className="section-title text-center text-lg-start order-1">
+                  <h6 className="wow fadeInUp testimonial-heading-left">testimonials</h6>
+                  <h2 className="text-white tp-char-animation testimonial-main-title"
+                    style={{
+                      font: 'bold'
+                    }}>
                     Our clients awesome Testimonials
                   </h2>
                 </div>
 
-                <div className="ratting-box wow fadeInUp" data-wow-delay=".5s">
-                  <h3>
-                    <span className="count">50</span>
-                  </h3>
-                  <div className="content">
-                    <div className="star">
-                      {[...Array(5)].map((_, i) => (
-                        <i key={i} className="fa-solid fa-star"></i>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="header-button mt-5">
+                {/* ✅ Button - Below Title on mobile, Bottom on desktop */}
+                <div className="header-button-wrapper mt-4 mt-lg-5 text-center text-lg-start order-2 order-lg-4">
                   <Link href="/about" className="theme-btn border-white">
                     <span className="icon-1"></span>
                     connect with us
                     <span className="icon-2"></span>
                   </Link>
                 </div>
+
+                {/* ✅ Rating Box - Below Button on mobile, Above Button on desktop */}
+                <div className="ratting-box-wrapper mt-4 mt-lg-0 order-3 order-lg-2 d-flex justify-content-center justify-content-lg-start">
+                  <div className="ratting-box wow fadeInUp" data-wow-delay=".5s">
+                    <h3>
+                      <span className="count">50</span>
+                    </h3>
+                    <div className="content">
+                      <div className="star">
+                        {[...Array(5)].map((_, i) => (
+                          <i key={i} className="fa-solid fa-star"></i>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* ✅ Swiper Slider with AUTOPLAY */}
-            <div className="col-lg-6">
-              <Swiper
-                modules={[Autoplay, EffectCards]}
-                effect="cards"
-                grabCursor
-                loop={false}
-                speed={600}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                  waitForTransition: true,
-                  reverseDirection: false,
-                }}
-                cardsEffect={{
-                  perSlideRotate: 2,
-                  perSlideOffset: 8,
-                  rotate: true,
-                  slideShadows: true,
-                }}
-                onSwiper={(swiper) => {
-                  swiperRef.current = swiper;
-                }}
-                onSlideChange={(swiper) => {
-                  setActiveIndex(swiper.activeIndex);
-                  // Loop back to first slide when reaching the end
-                  if (swiper.activeIndex === testimonials.length - 1) {
-                    setTimeout(() => {
-                      swiper.slideTo(0);
-                    }, 3000);
-                  }
-                }}
-                className="testimonial-slider"
-              >
-                {testimonials.map((item, i) => (
-                  <SwiperSlide key={i}>
-                    <div className="testimonial-box-items">
-                      <div className="client-info">
-                        <Image
-                          src={item.image}
-                          alt={item.name}
-                          width={80}
-                          height={80}
-                          className="rounded-circle"
-                        />
-                        <div className="client-content">
-                          <h5>{item.name}</h5>
-                          <p>{item.position}</p>
+            {/* ✅ Right Column (Swiper Slider) */}
+            <div className="col-lg-6 mt-5 mt-lg-0">
+              <div className="swiper-container-wrapper text-center">
+                <Swiper
+                  modules={[Autoplay, EffectCards]}
+                  effect="cards"
+                  grabCursor
+                  loop={false}
+                  speed={600}
+                  autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    waitForTransition: true,
+                    reverseDirection: false,
+                  }}
+                  cardsEffect={{
+                    perSlideRotate: 2,
+                    perSlideOffset: 8,
+                    rotate: true,
+                    slideShadows: true,
+                  }}
+                  onSwiper={(swiper) => {
+                    swiperRef.current = swiper;
+                  }}
+                  onSlideChange={(swiper) => {
+                    setActiveIndex(swiper.activeIndex);
+                    // Loop back to first slide when reaching the end
+                    if (swiper.activeIndex === testimonials.length - 1) {
+                      setTimeout(() => {
+                        swiper.slideTo(0);
+                      }, 3000);
+                    }
+                  }}
+                  className="testimonial-slider"
+                >
+                  {testimonials.map((item, i) => (
+                    <SwiperSlide key={i}>
+                      <div className="testimonial-box-items">
+                        <div className="client-info">
+                          <Image
+                            src={item.image}
+                            alt={item.name}
+                            width={80}
+                            height={80}
+                            className="rounded-circle"
+                          />
+                          <div className="client-content">
+                            <h5>{item.name}</h5>
+                            <p>{item.position}</p>
+                          </div>
+                        </div>
+                        <div className="testi-content">
+                          <div className="icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="27"
+                              height="20"
+                              viewBox="0 0 27 20"
+                              fill="none"
+                            >
+                              <path
+                                d="M26.666 -0.222168V19.7778L16.666 9.77783V-0.222168H26.666Z"
+                                fill="#59D2F3"
+                              />
+                              <path
+                                d="M10 -0.222168V19.7778L0 9.77783V-0.222168H10Z"
+                                fill="#59D2F3"
+                              />
+                            </svg>
+                          </div>
+                          <span>{item.text}</span>
                         </div>
                       </div>
-                      <div className="testi-content">
-                        <div className="icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="27"
-                            height="20"
-                            viewBox="0 0 27 20"
-                            fill="none"
-                          >
-                            <path
-                              d="M26.666 -0.222168V19.7778L16.666 9.77783V-0.222168H26.666Z"
-                              fill="#59D2F3"
-                            />
-                            <path
-                              d="M10 -0.222168V19.7778L0 9.77783V-0.222168H10Z"
-                              fill="#59D2F3"
-                            />
-                          </svg>
-                        </div>
-                        <span>{item.text}</span>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
 
               {/* ✅ Dots */}
               <div className="swiper-dot">
@@ -226,6 +232,10 @@ export default function TestimonialSection() {
           height: 20px;
         }
 
+        .testimonial-main-title {
+          font-size: 48px;
+        }
+
         /* ✅ Dots */
         .swiper-dot {
           display: flex;
@@ -261,9 +271,55 @@ export default function TestimonialSection() {
         }
 
         @media (max-width: 991px) {
+          .testimonial-section {
+            padding: 80px 0;
+          }
+
+          .testimonial-heading-left {
+            text-align: left !important;
+            display: block;
+            width: 100%;
+            margin-bottom: 25px !important;
+            color: #ff8c00; /* Matching the orange vibe from screenshot */
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 2px;
+          }
+
+          .testimonial-main-title {
+            font-size: 32px !important;
+            line-height: 1.3;
+            margin-bottom: 20px !important;
+            text-transform: uppercase;
+          }
+
+          .swiper-container-wrapper {
+            width: 90%;
+            margin: 0 auto;
+          }
+
           .testimonial-box-items {
             padding: 20px;
             min-height: auto;
+            text-align: left; /* Keep testimonial text readable */
+          }
+
+          .ratting-box-wrapper {
+            margin-top: 30px !important;
+          }
+
+          .header-button-wrapper {
+            margin-top: 30px !important;
+          }
+        }
+
+        @media (max-width: 575px) {
+          .testimonial-main-title {
+            font-size: 26px !important;
+          }
+
+          .swiper-container-wrapper {
+            width: 100%;
           }
         }
       `}</style>
