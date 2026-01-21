@@ -30,21 +30,22 @@ html {
   }
 }
 
-/* ===== MOBILE ONLY STYLES ===== */
 @media (max-width: 768px) {
   .hero-mobile-wrap {
-    margin: 16px;          /* separates from navbar */
-    margin-top: 60px;      /* gap from navbar */
-    border-radius: 16px;   /* rounded corners only on mobile */
-    overflow: hidden; 
+    margin: 16px;
+    margin-top: 60px;
+    border-radius: 16px;
+    overflow: hidden;
     background-size: cover;
     background-position: 60% center;
     min-height: 70vh;
-    height: 60vh;     /* prevents image overflow */
+    height: 60vh;
+   
   }
 
   .hero-mobile-wrap .row {
-    align-items: flex-start !important; /* text moves to top */
+    align-items: flex-start !important;
+      
   }
 
   .hero-mobile-wrap .hero-content {
