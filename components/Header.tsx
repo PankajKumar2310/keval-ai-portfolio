@@ -92,6 +92,16 @@ export default function Header() {
                                                 </Link>
                                             </li>
                                             <li>
+                                                <Link href="/why-we-are-best">
+                                                    Why We Are Best ?
+                                                </Link>
+                                            </li>
+                                             <li>
+                                                <Link href="/blog">
+                                                    Blog
+                                                </Link>
+                                            </li>
+                                            <li>
                                                 <Link href="/service">
                                                     Services
                                                 </Link>

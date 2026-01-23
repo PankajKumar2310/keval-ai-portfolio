@@ -2966,16 +2966,16 @@ span {
   }
 }
 .header-1 .sidebar__toggle .header-bar span {
-  background: var(--white);
+  background: var(--header);
 }
 .header-1 .sidebar__toggle .header-bar span:first-child {
-  background: var(--white);
+  background: var(--header);
 }
 .header-1 .sidebar__toggle .header-bar span:nth-child(2) {
-  background: var(--white);
+  background: var(--header);
 }
 .header-1 .sidebar__toggle .header-bar span:last-child {
-  background: var(--white);
+  background: var(--header);
 }
 .header-1.header-2 .sidebar__toggle .theme-btn {
   padding: 16px 20px;
@@ -3905,6 +3905,15 @@ span {
     padding: 130px 0;
   }
 }
+
+@media (max-width: 767px) {
+  .belgium-hero-section {
+    margin: 80px 16px 0;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
 .hero-1::before {
   position: absolute;
   display: none;
