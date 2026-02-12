@@ -9,24 +9,21 @@ interface BlogCardGridProps {
     title?: string;
     description?: string;
     showBrowseAll?: boolean;
-    category?: string;
     limit?: number;
 }
 
-export default function BlogCardGrid({ title, description, showBrowseAll = false, category, limit }: BlogCardGridProps) {
+export default function BlogCardGrid({ title, description, showBrowseAll = false, limit }: BlogCardGridProps) {
     const orange = "#FF7D32";
 
-    // Filter blogs by category if specified, otherwise get all blogs
-    const filteredBlogs = category 
-        ? blogs.filter(blog => blog.category === category)
-        : blogs;
+    // Get all blogs since category filtering is no longer supported
+    const filteredBlogs = blogs;
 
     // Limit the number of blogs if specified
     const displayBlogs = limit ? filteredBlogs.slice(0, limit) : filteredBlogs;
 
-    // If no title provided, use category name or default
-    const displayTitle = title || (category ? category : 'Latest Blogs');
-    const displayDescription = description || (category ? `Explore our latest ${category} articles and insights.` : 'Discover the latest insights and trends in software development and technology.');
+    // If no title provided, use default
+    const displayTitle = title || 'Latest Blogs';
+    const displayDescription = description || 'Discover the latest insights and trends in software development and technology.';
 
     return (
         <section style={{ padding: '60px 0', background: '#fff' }}>
@@ -36,7 +33,6 @@ export default function BlogCardGrid({ title, description, showBrowseAll = false
                         <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', margin: 0, fontWeight: 'bold', color: '#000', fontFamily: 'Teko, sans-serif', textTransform: 'uppercase' }}>{displayTitle}</h2>
                         <p style={{ color: '#555', margin: 0 }}>{displayDescription}</p>
                     </div>
-                   
                 </div>
 
                 <div className="row g-4">
@@ -54,14 +50,13 @@ export default function BlogCardGrid({ title, description, showBrowseAll = false
                                 </div>
                                 <div style={{ padding: '25px', flex: '1' }}>
                                     <div className="d-flex justify-content-between align-items-center mb-3">
-                                        <span style={{ color: orange, fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px', fontFamily: 'Teko, sans-serif' }}>{blog.category}</span>
-                                        <span style={{ color: '#888', fontSize: '14px' }}>{blog.publishDate}</span>
+                                        <span style={{ color: orange, fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px', fontFamily: 'Teko, sans-serif' }}>Blog</span>
                                     </div>
                                     <h3 style={{ fontSize: '22px', fontWeight: '700', marginBottom: '15px', color: '#000', lineHeight: '1.2' }}>
                                         {blog.title}
                                     </h3>
                                     <p style={{ fontSize: '15px', color: '#666', marginBottom: '25px', lineHeight: '1.6' }}>
-                                        {blog.metaDescription}
+                                        Read our latest blog post to learn more about software development and technology insights.
                                     </p>
                                     <Link href={`/blog/${blog.slug}`} className="text-decoration-none" style={{
                                         background: orange,

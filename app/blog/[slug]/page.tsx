@@ -23,10 +23,8 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
 
   return {
     title: blog.metaTitle,
-    description: blog.metaDescription,
     openGraph: {
       title: blog.metaTitle,
-      description: blog.metaDescription,
       images: [blog.bannerImage],
     },
   };

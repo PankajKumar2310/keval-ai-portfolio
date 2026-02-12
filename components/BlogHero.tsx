@@ -56,7 +56,7 @@ export default function BlogHero() {
                                         {featuredBlogs[0]?.title || 'Digital Transformation For Agencies'}
                                     </h2>
                                     <p style={{ color: '#eee', fontSize: '16px', lineHeight: '1.5', margin: 0 }}>
-                                        {featuredBlogs[0]?.metaDescription || 'Explore How Agencies Can Successfully Implement Digital Transformation To Stay Competitive.'}
+                                        Explore our latest insights and articles to stay ahead in the digital landscape.
                                     </p>
                                 </div>
                             </div>
@@ -81,14 +81,14 @@ export default function BlogHero() {
                                     </div>
                                     <div className="d-flex flex-column justify-content-center" style={{ padding: '20px' }}>
                                         <div className="d-flex justify-content-between align-items-center mb-2" style={{ fontSize: '13px' }}>
-                                            <span style={{ color: orange, fontWeight: '600' }}>{blog.category}</span>
-                                            <span style={{ color: '#888' }}>{blog.publishDate}</span>
+                                            <span style={{ color: orange, fontWeight: '600' }}>Blog</span>
+                                            <span style={{ color: '#888' }}>Latest Post</span>
                                         </div>
                                         <h3 style={{ fontSize: '17px', fontWeight: '700', marginBottom: '8px', textTransform: 'capitalize', lineHeight: '1.3', color: '#000' }}>
                                             {blog.title}
                                         </h3>
                                         <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.4', margin: 0, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-                                            {blog.metaDescription}
+                                            Read our latest insights on software development and technology trends.
                                         </p>
                                     </div>
                                 </div>
