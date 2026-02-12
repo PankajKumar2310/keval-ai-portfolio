@@ -36,18 +36,7 @@ export default function BlogCardGrid({ title, description, showBrowseAll = false
                         <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', margin: 0, fontWeight: 'bold', color: '#000', fontFamily: 'Teko, sans-serif', textTransform: 'uppercase' }}>{displayTitle}</h2>
                         <p style={{ color: '#555', margin: 0 }}>{displayDescription}</p>
                     </div>
-                    <Link href="/blog/all" className="text-decoration-none" style={{
-                        background: orange,
-                        color: '#fff',
-                        padding: '12px 25px',
-                        borderRadius: '10px',
-                        fontWeight: '600',
-                        textTransform: 'capitalize',
-                        display: 'inline-block',
-                        width: 'fit-content'
-                    }}>
-                        Browse All Blogs
-                    </Link>
+                   
                 </div>
 
                 <div className="row g-4">

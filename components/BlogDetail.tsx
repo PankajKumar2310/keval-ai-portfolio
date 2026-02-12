@@ -164,20 +164,7 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
                 marginBottom: '60px'
               }}
             >
-              {/* <div style={{ marginBottom: '40px', textAlign: 'center' }}>
-                <h2
-                  style={{
-                    fontSize: 'clamp(1.4rem, 4vw, 2rem)',
-                    fontWeight: 'bold',
-                    color: '#1E1E1E',
-                    textTransform: 'uppercase',
-                    letterSpacing: '1px',
-                    marginBottom: '10px',
-                  }}
-                >
-                  Frequently Asked Questions
-                </h2>
-              </div> */}
+             
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
                 {faqBlocks.map((block, blockIndex) => {
