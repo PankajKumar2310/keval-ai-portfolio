@@ -20,10 +20,10 @@ function Counter({ target, suffix = '', duration = 4000 }: CounterProps) {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated.current) {
             hasAnimated.current = true;
-            
+
             let start = 0;
             const increment = target / (duration / 16); // 60fps
-            
+
             const timer = setInterval(() => {
               start += increment;
               if (start >= target) {
@@ -65,7 +65,7 @@ export default function CounterSection() {
       }}
     >
       <div className="section-title style-4 title-anim">
-        <h3 className="text-center heading_text" style={{ color: '#000000' }}>
+        <h3 className="text-center heading_text" style={{ color: '#fff8f8ff' }}>
           driven by results
         </h3>
       </div>
@@ -73,7 +73,7 @@ export default function CounterSection() {
         <div className="counter-wrapper-3">
           <div className="row g-4">
             <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div className="counter-box-items">
+              <div className="counter-box-items pt-8 pb-8 lg:p-[60px]">
                 <h2 style={{ fontSize: 'clamp(48px, 8vw, 72px)', fontWeight: 'bold', lineHeight: '1.2' }}>
                   <Counter target={20} suffix="+" />
                 </h2>
@@ -81,7 +81,7 @@ export default function CounterSection() {
               </div>
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-              <div className="counter-box-items">
+              <div className="counter-box-items pt-8 pb-8 lg:p-[60px]">
                 <h2 style={{ fontSize: 'clamp(48px, 8vw, 72px)', fontWeight: 'bold', lineHeight: '1.2' }}>
                   <Counter target={99} suffix="%" />
                 </h2>
@@ -89,7 +89,7 @@ export default function CounterSection() {
               </div>
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-              <div className="counter-box-items">
+              <div className="counter-box-items pt-8 pb-8 lg:p-[60px]">
                 <h2 style={{ fontSize: 'clamp(48px, 8vw, 72px)', fontWeight: 'bold', lineHeight: '1.2' }}>
                   <Counter target={10} suffix="k" />
                 </h2>

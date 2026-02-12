@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "About Keval AI | AI Automation & Software Experts",
+    title: "About Keval AI | Smart AI Automation & Business Solutions",
     description:
-        "Learn about Keval AI, our mission, and how we help businesses grow with AI automation, chatbots, CRM solutions, and custom software development.",
+        "Learn about Keval AI, our mission, and how we help businesses grow with practical AI automation, chatbots, CRM systems, and smart digital solutions.",
     alternates: {
         canonical: "https://www.kevalai.com/about",
     },

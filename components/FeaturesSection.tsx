@@ -34,9 +34,9 @@ export default function FeaturesSection() {
               <div className="service-box-items-5">
                 <div className="content text-center">
                   <h3 className="fw-bold">
-                    <Link 
+                    <Link
                       href="#"
-                      style={{ 
+                      style={{
                         color: '#00072D',
                         fontSize: 'clamp(24px, 4vw, 36px)'
                       }}
@@ -61,15 +61,18 @@ export default function FeaturesSection() {
                 className="col-lg-4 col-md-6 wow fadeInUp"
                 data-wow-delay=".3s"
               >
-                <div className="service-box-items-5">
+                <div className="service-box-items-5 text-center text-lg-start">
                   <div
-                    className="card_image image_border"
+                    className="card_image image_border mx-auto mx-lg-0"
                     style={{
                       width: '100%',
-                      height: '375px',
+                      maxWidth: '400px', // Limiting width for mobile reduced look
+                      aspectRatio: '1/1', // Keeping it square-ish like reference
+                      height: 'auto',
                       borderRadius: '30px',
                       overflow: 'hidden',
                       position: 'relative',
+                      marginBottom: '20px'
                     }}
                   >
                     <Image
@@ -83,10 +86,12 @@ export default function FeaturesSection() {
                     />
                   </div>
                   <div className="content pt-3 px-2">
-                    <h5>
-                      <Link href="#">{feature.title}</Link>
+                    <h5 className="text-uppercase fw-bold">
+                      <Link href="#" style={{ color: '#00072D' }}>{feature.title}</Link>
                     </h5>
-                    <p style={{ color: '#000000' }}>{feature.description}</p>
+                    <p className="text-uppercase" style={{ color: '#000000', fontSize: '14px', lineHeight: '1.6' }}>
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
               </div>

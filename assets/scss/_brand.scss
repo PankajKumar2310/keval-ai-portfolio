@@ -11,7 +11,7 @@
     .brand-image {
         text-align: center;
         @include transition;
-        
+
         &:hover {
             filter: brightness(0);
         }
@@ -26,7 +26,7 @@
                 color: $theme-color-2;
             }
         }
-    
+
     }
 }
 
@@ -60,12 +60,13 @@
 }
 
 .gt-slide-transtion {
-	-webkit-transition-timing-function: linear;
-	transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
 }
+
 .gt-brand-slide-element {
-	width: auto;
-	display: inline-block;
+    width: auto;
+    display: inline-block;
 }
 
 .brand-wrapper-4 {
@@ -73,8 +74,8 @@
     border-top: 1px solid rgba(0, 0, 0, 0.20);
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
 
-    @include breakpoint (max-lg){
-       padding: 70px 0;
+    @include breakpoint (max-lg) {
+        padding: 70px 0;
     }
 
     .brand-text-4 {
@@ -85,11 +86,11 @@
         font-family: $heading-font;
         line-height: 1;
 
-        @include breakpoint (max-md){
+        @include breakpoint (max-md) {
             font-size: 140px;
         }
 
-        @include breakpoint (max-sm){
+        @include breakpoint (max-sm) {
             font-size: 100px;
         }
     }
@@ -105,7 +106,7 @@
 
     &.text-white-style {
         .brand-text-4 {
-           color: $white;
+            color: $white;
         }
     }
 }

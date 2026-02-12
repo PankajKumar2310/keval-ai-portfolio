@@ -32,7 +32,7 @@ const projects = [
     titleLink: '#',
     buttonLink: '/portfolio',
   },
-   {
+  {
     image: '/assets/keval-image/portfolio/donai-gems.png',
     category: 'CRM AND ERP',
     title: 'Donai Gems',
@@ -66,11 +66,7 @@ export default function ProjectSection() {
             }}
           >
             {infiniteProjects.map((project, index) => (
-              <div key={index} className="swiper-slide"
-              style={{
-                width: '30%',
-                margin: '5px'
-              }}>
+              <div key={index} className="swiper-slide project-slide-item">
                 <div className="project-box-items-4 p-relative">
                   <div className="thumb">
                     <Image
@@ -107,6 +103,26 @@ export default function ProjectSection() {
       </div>
 
       <style jsx global>{`
+        :root {
+          --slide-width: 30%;
+          --slide-margin: 5px;
+          --translate-step: -20%;
+        }
+
+        @media (max-width: 768px) {
+          :root {
+            --slide-width: 90%;
+            --slide-margin: 0 5%;
+            --translate-step: -100%;
+          }
+        }
+
+        .project-slide-item {
+          width: var(--slide-width);
+          margin: var(--slide-margin);
+          flex-shrink: 0;
+        }
+
         /* Smooth right-to-left movement with pauses */
         @keyframes slidePause {
           0% {
@@ -116,16 +132,16 @@ export default function ProjectSection() {
             transform: translateX(0);
           }
           40% {
-            transform: translateX(-20%);
+            transform: translateX(var(--translate-step));
           }
           60% {
-            transform: translateX(-20%);
+            transform: translateX(var(--translate-step));
           }
           80% {
-            transform: translateX(-40%);
+            transform: translateX(calc(var(--translate-step) * 2));
           }
           100% {
-            transform: translateX(-40%);
+            transform: translateX(calc(var(--translate-step) * 2));
           }
         }
 

@@ -11,7 +11,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             z-index: 9;
             width: 175px;
             height: 175px;
@@ -37,6 +37,7 @@
                 position: absolute;
                 top: -3px;
                 left: 13px;
+
                 img {
                     width: initial;
                     height: initial;
@@ -58,23 +59,23 @@
             gap: 100px;
             margin-top: 30px;
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 gap: 15px;
                 flex-wrap: wrap;
             }
 
-            @include breakpoint (max-sm){
-               gap: 10px;
+            @include breakpoint (max-sm) {
+                gap: 10px;
             }
 
             h3 {
                 font-size: 40px;
 
-                @include breakpoint (max-xxl){
-                   font-size: 34px;
+                @include breakpoint (max-xxl) {
+                    font-size: 34px;
                 }
 
-                @include breakpoint (max-sm){
+                @include breakpoint (max-sm) {
                     font-size: 30px;
                 }
 
@@ -97,8 +98,8 @@
                     left: -65px;
                     background-color: $header-color;
 
-                    @include breakpoint (max-xl){
-                       display: none;
+                    @include breakpoint (max-xl) {
+                        display: none;
                     }
                 }
             }
@@ -115,11 +116,11 @@
                         }
                     }
                 }
-    
+
                 p {
                     color: $white;
                     opacity: 0.7;
-                    
+
                     &::before {
                         background-color: $white;
                     }
@@ -151,7 +152,7 @@
     margin-top: 60px;
     position: relative;
 
-    @include breakpoint (max-lg){
+    @include breakpoint (max-lg) {
         margin-top: 30px;
     }
 
@@ -216,7 +217,7 @@
         .theme-btn {
             margin-top: 90px;
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 margin-top: 30px;
             }
         }
@@ -227,7 +228,7 @@
             .icon {
                 &:hover {
                     background-color: $theme-color;
-    
+
                     img {
                         transform: rotate(0);
                     }
@@ -239,7 +240,7 @@
             h3 {
                 a {
                     color: $header-color-2;
-    
+
                     &:hover {
                         color: $theme-color;
                     }
@@ -251,7 +252,7 @@
     &.theme-color-1 {
         .thumb {
             .icon {
-    
+
                 &:hover {
                     background-color: $theme-color;
                 }
@@ -259,7 +260,7 @@
         }
 
         .content {
-    
+
             h3 {
                 a {
                     &:hover {
@@ -300,17 +301,17 @@
 .project-box-items {
     position: relative;
     z-index: 9;
-    
+
     .thumb {
         overflow: hidden;
         border-radius: 40px;
         @include transition;
 
-       img {
+        img {
             @include imgw;
             border-radius: 40px;
             @include transition;
-       }
+        }
     }
 
     .content {
@@ -345,14 +346,14 @@
     &.dark-text-white {
         .content {
             p {
-               
+
                 color: $white;
             }
-    
+
             h3 {
                 a {
                     color: $white;
-    
+
                     &:hover {
                         color: $theme-color-3;
                     }
@@ -371,7 +372,7 @@
         left: 0;
         transform: translateY(-50%);
 
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             display: none;
         }
     }
@@ -381,7 +382,7 @@
         bottom: 0;
         right: 0;
 
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             display: none;
         }
     }
@@ -404,11 +405,11 @@
                 font-weight: 600;
                 margin-bottom: 20px;
 
-                @include breakpoint (max-md){
+                @include breakpoint (max-md) {
                     font-size: 50px;
                 }
 
-                @include breakpoint (max-sm){
+                @include breakpoint (max-sm) {
                     font-size: 40px;
                 }
             }
@@ -440,6 +441,7 @@
 
                 li {
                     @include flex;
+
                     .list-1 {
                         min-width: 80px;
                         font-weight: 600;
@@ -454,12 +456,12 @@
                         color: #C8C8CD;
                         margin-left: 75px;
 
-                        @include breakpoint (max-sm){
+                        @include breakpoint (max-sm) {
                             margin-left: 50px;
                         }
                     }
 
-                    &:not(:last-child){
+                    &:not(:last-child) {
                         margin-bottom: 20px;
                     }
                 }
@@ -468,7 +470,7 @@
             .social-icon {
                 gap: 12px;
                 margin-top: 30px;
-    
+
                 a {
                     width: 40px;
                     height: 40px;
@@ -483,7 +485,7 @@
                     -webkit-transition: all 0.4s ease-in-out;
                     transition: all 0.4s ease-in-out;
                     text-align: center;
-    
+
                     &:hover {
                         background-color: $theme-color;
                         color: $header-color;
@@ -499,7 +501,7 @@
         border-bottom: 1px solid #E5E5E5;
         margin-top: 65px;
         padding: 25px 0;
-        
+
         .cmn-next,
         .cmn-prev {
             width: 70px;
@@ -509,66 +511,75 @@
             border-radius: 50%;
             transition: all 0.4s;
             border: 1px solid #E5E5E5;
-    
+
             i {
                 color: #454750;
                 font-size: 24px;
                 transition: all 0.4s;
             }
+
             &:hover {
                 background: $theme-color;
                 border-color: $theme-color;
-    
+
                 i {
                     color: $white;
                 }
             }
+
             @include breakpoint(max-xxl) {
                 width: 48px;
                 height: 48px;
                 line-height: 48px;
-    
+
                 i {
                     font-size: 17px;
                 }
             }
+
             @include breakpoint(max-xxl) {
                 width: 38px;
                 height: 38px;
                 line-height: 38px;
-    
+
                 i {
                     font-size: 16px;
                 }
             }
         }
+
         .previus-text {
             font-size: 22px;
             color: $header-color;
             text-transform: uppercase !important;
             font-weight: 500 !important;
         }
-       
+
         @include breakpoint(max-sm) {
             .previus-text {
                 font-size: 18px;
             }
+
             .project-storke {
                 font-size: 30px;
             }
         }
+
         @include breakpoint(max-sm) {
             .previus-text {
                 font-size: 16px;
             }
+
             .project-storke {
                 font-size: 24px;
             }
         }
+
         @include breakpoint(max-xxs) {
             .previus-text {
                 font-size: 14px;
             }
+
             .project-storke {
                 display: none;
             }
@@ -581,7 +592,7 @@
     margin-right: -5%;
     margin-top: 50px;
 
-    @include breakpoint (max-xl){
+    @include breakpoint (max-xl) {
         margin-left: 0;
         margin-right: 0;
     }
@@ -608,6 +619,12 @@
         @include flex;
         justify-content: space-between;
 
+        @include breakpoint (max-sm) {
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
         .content {
             span {
                 font-size: 16px;
@@ -616,14 +633,14 @@
                 margin-bottom: 5px;
                 color: $header-color-2;
             }
-    
+
             h3 {
                 font-size: 24px;
                 font-weight: 700;
-    
+
                 a {
                     color: $header-color-2;
-    
+
                     &:hover {
                         color: $theme-color;
                     }
@@ -640,7 +657,7 @@
 
             &:hover {
                 border: 1px solid $theme-color;
-        
+
             }
         }
     }
@@ -650,27 +667,27 @@
             padding: 30px 20px;
             @include flex;
             justify-content: space-between;
-    
+
             .content {
                 span {
                     color: $white;
                 }
-        
+
                 h3 {
-                  
+
                     a {
                         color: $white;
-        
+
                         &:hover {
                             color: $theme-color;
                         }
                     }
                 }
             }
-    
+
             .theme-btn {
                 color: $white;
-    
+
                 &:hover {
                     border: 1px solid $theme-color;
                     color: $header-color;

@@ -71,14 +71,14 @@ export default function Header() {
                                     />
                                 </div>
                             </Link>
-                            <div className="mean__menu-wrapper">
+                            <div className="mean__menu-wrapper d-none d-xl-block">
                                 <div className="main-menu">
                                     <nav id="mobile-menu">
                                         <ul>
                                             <li className="has-dropdown active menu-thumb">
                                                 <Link href="/">Home</Link>
                                             </li>
-                                            <li className="has-dropdown active d-xl-none">
+                                            <li className="has-dropdown active d-xl-none" style={{ color: '#ec1515ff !important', padding: '20px 0' }}>
                                                 <Link
                                                     href="/"
                                                     className="border-none"
@@ -90,6 +90,19 @@ export default function Header() {
                                                 <Link href="/about">
                                                     About Us
                                                 </Link>
+                                            </li>
+                                            <li className="has-dropdown">
+                                                <Link href="#">
+                                                    Resources <i className="fas fa-chevron-down"></i>
+                                                </Link>
+                                                <ul className="submenu">
+                                                    <li>
+                                                        <Link href="/blog">Blog</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/best-software-development-agency-belgium">Why We Are Best ?</Link>
+                                                    </li>
+                                                </ul>
                                             </li>
                                             <li>
                                                 <Link href="/service">
@@ -213,9 +226,8 @@ export default function Header() {
                 </div>
             </div>
             <div
-                className={`offcanvas__overlay ${
-                    isOffcanvasOpen ? "overlay-open" : ""
-                }`}
+                className={`offcanvas__overlay ${isOffcanvasOpen ? "overlay-open" : ""
+                    }`}
                 onClick={closeOffcanvas}
             >
                 {" "}

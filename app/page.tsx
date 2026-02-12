@@ -30,7 +30,7 @@ export default function Home() {
         if ((window as any).WOW) {
           new (window as any).WOW().init();
         }
-        
+
         // Initialize custom animations if available
         if ((window as any).initCustomAnimations) {
           (window as any).initCustomAnimations();
@@ -40,50 +40,46 @@ export default function Home() {
   }, [pathname]);
 
   return (
-    <>
+    <ClientOnly>
       <Header />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.kevalai.com/#webpage",
+          "url": "https://www.kevalai.com/",
+          "name": "Keval AI – AI Automation, Chatbots & CRM Solutions",
+          "description": "Keval AI helps businesses scale using AI automation, intelligent chatbots, CRM systems, and custom digital solutions.",
+          "isPartOf": {
+            "@id": "https://www.kevalai.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://www.kevalai.com/"
+          },
+          "inLanguage": "en"
+        })}
+      </script>
       <main style={{ backgroundColor: '#ffffff' }}>
-        <ClientOnly>
-          <HeroSection />
-        </ClientOnly>
-        <ClientOnly>  6
-          <BrandSection />
-        </ClientOnly>
-        <ClientOnly>
-          <ResetOnRouteChange>
-            <ProjectSection />
-          </ResetOnRouteChange>
-        </ClientOnly>
-        <ClientOnly>
-          <ResetOnRouteChange>
-            <TestimonialSection />
-          </ResetOnRouteChange>
-        </ClientOnly>
-        <ClientOnly>
-          <TechnologiesSection />
-        </ClientOnly>
-        <ClientOnly>
-          <ServicesSection />
-        </ClientOnly>
-        <ClientOnly>
-          <ChallengesSection />
-        </ClientOnly>
-        <ClientOnly>
-          <FeaturesSection />
-        </ClientOnly>
-        <ClientOnly>
-          <CounterSection />
-        </ClientOnly>
-        <ClientOnly>
-          <CalendlySection />
-        </ClientOnly>
-        <ClientOnly>
-          <MarqueeSection />
-        </ClientOnly>
+        <HeroSection />
+        <BrandSection />
+        <ResetOnRouteChange>
+          <ProjectSection />
+        </ResetOnRouteChange>
+        <ResetOnRouteChange>
+          <TestimonialSection />
+        </ResetOnRouteChange>
+        {/* <TechnologiesSection /> */}
+        <ServicesSection />
+        <ChallengesSection />
+        <FeaturesSection />
+        <CounterSection />
+        <CalendlySection />
+        <MarqueeSection />
       </main>
       <Footer />
       <BackToTop />
-    </>
+    </ClientOnly>
   );
 }
 

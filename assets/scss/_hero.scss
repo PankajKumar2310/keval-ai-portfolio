@@ -3,15 +3,15 @@
     position: relative;
     z-index: 1;
 
-    @include breakpoint (max-xl){
-       padding: 180px 0;
+    @include breakpoint (max-xl) {
+        padding: 180px 0;
     }
 
-    @include breakpoint (max-md){
-       padding: 150px 0;
+    @include breakpoint (max-md) {
+        padding: 150px 0;
     }
 
-    @include breakpoint (max-sm){
+    @include breakpoint (max-sm) {
         padding: 130px 0;
     }
 
@@ -24,15 +24,15 @@
     .container-fluid {
         padding: 0 60px;
 
-        @include breakpoint (max-xxxl){
+        @include breakpoint (max-xxxl) {
             padding: 0 50px;
         }
 
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             padding: 0 40px;
         }
 
-        @include breakpoint (max-xl){
+        @include breakpoint (max-xl) {
             padding: 0 30px;
         }
     }
@@ -57,25 +57,25 @@
         h1 {
             margin-top: 20px;
             color: $white;
-            
-            @include breakpoint (max-xxl){
+
+            @include breakpoint (max-xxl) {
                 font-size: 170px;
             }
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 font-size: 160px;
             }
 
-            @include breakpoint (max-lg){
+            @include breakpoint (max-lg) {
                 font-size: 130px;
                 line-height: 90%;
             }
 
-            @include breakpoint (max-md){
+            @include breakpoint (max-md) {
                 font-size: 100px;
             }
 
-            @include breakpoint (max-sm){
+            @include breakpoint (max-sm) {
                 font-size: 70px;
                 line-height: 100%;
             }
@@ -90,15 +90,15 @@
             }
 
             br {
-                @include breakpoint (max-xxl){
+                @include breakpoint (max-xxl) {
                     display: none;
                 }
 
-                @include breakpoint (max-xl){
+                @include breakpoint (max-xl) {
                     display: block;
                 }
 
-                @include breakpoint (max-sm){
+                @include breakpoint (max-sm) {
                     display: none;
                 }
             }
@@ -114,10 +114,10 @@
         top: 59%;
         transform: translate(-50%, -50%);
 
-        @include breakpoint (max-xl){
-           position: static;
-           transform: initial;
-           margin-top: 30px;
+        @include breakpoint (max-xl) {
+            position: static;
+            transform: initial;
+            margin-top: 30px;
         }
 
         .icon {
@@ -132,15 +132,16 @@
             img {
                 @include transition;
             }
-            
+
             &:hover {
                 background-color: $white;
-               img {
-                filter: brightness(0);
-               }
+
+                img {
+                    filter: brightness(0);
+                }
             }
         }
-        
+
         p {
             text-transform: uppercase;
             font-weight: 500;
@@ -155,7 +156,7 @@
         right: 80px;
         top: 33%;
 
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             position: static;
             margin-left: 40px;
             margin-top: 40px;
@@ -180,7 +181,7 @@
                 background-color: $text-color-2;
             }
 
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 10px;
             }
         }
@@ -210,7 +211,7 @@
         right: 60px;
         bottom: 160px;
 
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             position: static;
             max-width: 400px;
             margin-top: 40px;
@@ -223,11 +224,11 @@
     background-color: $black;
     padding-top: 180px;
 
-    @include breakpoint (max-xxl){
+    @include breakpoint (max-xxl) {
         padding-bottom: 80px;
     }
 
-    @include breakpoint (max-lg){
+    @include breakpoint (max-lg) {
         padding-bottom: 0;
     }
 
@@ -240,7 +241,7 @@
 
             img {
                 margin-left: 20px;
-                
+
             }
         }
     }
@@ -262,7 +263,7 @@
         @include flex;
         gap: 80px;
 
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             gap: 30px;
             flex-wrap: wrap;
         }
@@ -273,13 +274,13 @@
             font-weight: 500;
             max-width: 540px;
 
-            @include breakpoint (max-md){
+            @include breakpoint (max-md) {
                 font-size: 60px;
                 line-height: 100%;
             }
 
-            
-            @include breakpoint (max-sm){
+
+            @include breakpoint (max-sm) {
                 font-size: 60px;
             }
 
@@ -292,7 +293,7 @@
             display: flex;
             align-items: center;
             gap: 25px;
-    
+
             .icon {
                 width: 104px;
                 height: 104px;
@@ -301,19 +302,20 @@
                 border-radius: 104px;
                 border: 1px solid #3F3F3F;
                 text-align: center;
-    
+
                 img {
                     @include transition;
                 }
-                
+
                 &:hover {
                     background-color: $white;
-                   img {
-                    filter: brightness(0);
-                   }
+
+                    img {
+                        filter: brightness(0);
+                    }
                 }
             }
-            
+
             p {
                 text-transform: uppercase;
                 font-weight: 500;
@@ -363,23 +365,23 @@
             line-height: 90%;
             text-align: center;
 
-            @include breakpoint (max-xxl){
+            @include breakpoint (max-xxl) {
                 font-size: 150px;
             }
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 font-size: 130px;
             }
 
-            @include breakpoint (max-lg){
+            @include breakpoint (max-lg) {
                 font-size: 100px;
             }
 
-            @include breakpoint (max-md){
+            @include breakpoint (max-md) {
                 font-size: 85px;
             }
 
-            @include breakpoint (max-sm){
+            @include breakpoint (max-sm) {
                 font-size: 55px;
             }
 
@@ -393,7 +395,7 @@
             color: $white;
             margin-top: 20px;
 
-            @include breakpoint (max-md){
+            @include breakpoint (max-md) {
                 text-align: center;
             }
         }
@@ -411,7 +413,7 @@
             transform: translateX(-50%);
             bottom: -15%;
 
-            @include breakpoint (max-md){
+            @include breakpoint (max-md) {
                 position: static;
                 transform: initial;
                 margin: 0 auto;
@@ -423,12 +425,13 @@
             img {
                 @include transition;
             }
-            
+
             &:hover {
                 background-color: $white;
-               img {
-                filter: brightness(0);
-               }
+
+                img {
+                    filter: brightness(0);
+                }
             }
         }
     }
@@ -442,10 +445,10 @@
         margin-top: 120px;
         padding: 40px;
 
-        @include breakpoint (max-md){
-           flex-wrap: wrap;
-           gap: 30px;
-           padding: 30px;
+        @include breakpoint (max-md) {
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 30px;
         }
 
         .client-info {
@@ -488,7 +491,7 @@
         padding: 0 90px;
         padding-right: 0;
 
-        @include breakpoint (max-xl){
+        @include breakpoint (max-xl) {
             padding: 0 30px;
             padding-right: 30px;
         }
@@ -501,7 +504,7 @@
             color: $header-color-2;
             line-height: 91%;
 
-            @include breakpoint (max-xxl){
+            @include breakpoint (max-xxl) {
                 font-size: 90px;
                 margin-bottom: 60px;
 
@@ -510,18 +513,18 @@
                 }
             }
 
-            @include breakpoint (max-lg){
+            @include breakpoint (max-lg) {
                 font-size: 80px;
                 margin-bottom: 50px;
                 line-height: 100%;
             }
 
-            @include breakpoint (max-md){
+            @include breakpoint (max-md) {
                 font-size: 70px;
                 margin-bottom: 40px;
             }
 
-            @include breakpoint (max-sm){
+            @include breakpoint (max-sm) {
                 font-size: 50px;
                 margin-bottom: 30px;
             }
@@ -531,7 +534,7 @@
             margin-top: 20px;
             margin-bottom: 50px;
 
-            @include breakpoint (max-xxl){
+            @include breakpoint (max-xxl) {
                 display: none;
             }
         }
@@ -569,9 +572,9 @@
             border-radius: 50%;
             border: 1px solid $header-color-2;
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
             }
 
             .video-icon {
@@ -591,6 +594,7 @@
                 position: absolute;
                 top: -3px;
                 left: 13px;
+
                 img {
                     width: initial;
                     height: initial;
@@ -604,6 +608,7 @@
             right: 30px;
             @include flex;
             gap: 20px;
+
             a {
                 color: $header-color-2;
                 font-size: 16px;
@@ -626,19 +631,19 @@
     .container-fluid {
         padding: 0 120px;
 
-        @include breakpoint (max-xl4){
+        @include breakpoint (max-xl4) {
             padding: 0 60px;
         }
 
-        @include breakpoint (max-xxxl){
+        @include breakpoint (max-xxxl) {
             padding: 0 50px;
         }
 
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             padding: 0 40px;
         }
 
-        @include breakpoint (max-xl){
+        @include breakpoint (max-xl) {
             padding: 0 30px;
         }
     }
@@ -651,41 +656,42 @@
             color: $header-color-2;
             line-height: 86%;
 
-            @include breakpoint (max-xl4){
+            @include breakpoint (max-xl4) {
                 font-size: 150px;
             }
 
-            @include breakpoint (max-xxxl){
-               font-size: 150px;
-               line-height: 120%;
+            @include breakpoint (max-xxxl) {
+                font-size: 150px;
+                line-height: 120%;
 
-               span, br {
+                span,
+                br {
                     display: none !important;
-               }
+                }
             }
 
-            @include breakpoint (max-xxl){
+            @include breakpoint (max-xxl) {
                 font-size: 120px;
             }
 
-            @include breakpoint (max-xl){
+            @include breakpoint (max-xl) {
                 font-size: 100px;
             }
 
-            @include breakpoint (max-lg){
+            @include breakpoint (max-lg) {
                 font-size: 80px;
             }
 
-            @include breakpoint (max-md){
+            @include breakpoint (max-md) {
                 font-size: 60px;
                 text-align: center;
             }
 
-            @include breakpoint (max-sm){
+            @include breakpoint (max-sm) {
                 font-size: 52px;
             }
 
-            @include breakpoint (max-xxs){
+            @include breakpoint (max-xxs) {
                 font-size: 44px;
             }
 
@@ -705,18 +711,18 @@
         margin-right: 170px;
         margin-top: -140px;
 
-        @include breakpoint (max-xxxl){
-          margin-right: 70px;
+        @include breakpoint (max-xxxl) {
+            margin-right: 70px;
         }
 
-        @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             margin-top: 0;
             margin-right: 0;
- 
+
             img {
-                 @include imgw;
+                @include imgw;
             }
-         }
+        }
 
         img {
             border-radius: 20px 20px 0px 0px;

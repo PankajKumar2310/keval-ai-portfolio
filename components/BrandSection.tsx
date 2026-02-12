@@ -19,7 +19,7 @@ const clientLogos = [
 
 export default function BrandSection() {
   return (
-    <section 
+    <section
       className="brand-section fix section-padding"
       style={{ backgroundColor: '#ffffff' }}
     >

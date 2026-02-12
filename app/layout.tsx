@@ -19,9 +19,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "AI Automation, Chatbots & CRM Software | Keval AI",
+    title: "AI Automation & Smart Business Solutions | Keval AI",
     description:
-        "Keval AI builds AI automation, chatbots, CRM software, and custom web solutions to help businesses scale faster, smarter, and more efficiently.",
+        "Keval AI helps businesses grow with practical AI automation, chatbots, and smart software solutions designed to save time and improve customer experience.",
     authors: [{ name: "Keval AI" }],
     icons: { icon: "/assets/keval-image/logo/Keval AI Favicon- Blue.png" },
     verification: {

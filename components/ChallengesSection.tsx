@@ -31,7 +31,7 @@ const challenges = [
 
 export default function ChallengesSection() {
   return (
-    <section 
+    <section
       className="service-section-5 fix section-padding"
       style={{ backgroundColor: '#ffffff' }}
     >
@@ -45,7 +45,8 @@ export default function ChallengesSection() {
                     key challenges We <span>address</span>
                   </h3>
                 </div>
-                <div className="header-button">
+                {/* Desktop Button */}
+                <div className="header-button d-none d-lg-block">
                   <Link
                     href="/about"
                     className="theme-btn bg-black rounded-2 text-white border-white"
@@ -59,7 +60,7 @@ export default function ChallengesSection() {
             </div>
             <div className="col-xl-8 col-lg-8">
               <div className="service-right">
-                <div className="row g-4">
+                <div className="row g-4 justify-content-center">
                   {challenges.map((challenge, index) => (
                     <div
                       key={index}
@@ -79,6 +80,19 @@ export default function ChallengesSection() {
                     </div>
                   ))}
                 </div>
+              </div>
+            </div>
+            {/* Mobile Button */}
+            <div className="col-12 d-lg-none d-flex justify-content-center mt-4">
+              <div className="header-button">
+                <Link
+                  href="/about"
+                  className="theme-btn bg-black rounded-2 text-white border-white"
+                >
+                  <span className="icon-1"></span>
+                  Learn more
+                  <span className="icon-2"></span>
+                </Link>
               </div>
             </div>
           </div>
