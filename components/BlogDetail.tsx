@@ -291,7 +291,7 @@ export default function BlogDetail({ blog }: BlogDetailProps) {
                         marginBottom: '0',
                       }}
                     >
-                      {blog.metaDescription}
+                      Read our latest blog post to learn more about software development and technology insights.
                     </p>
                   </div>
 

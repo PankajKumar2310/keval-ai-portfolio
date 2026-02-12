@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import BlogHeader from "@/components/BlogHeader";
 import BlogHero from "@/components/BlogHero";
@@ -15,12 +15,6 @@ import { blogs } from "@/lib/blogs";
 
 export default function BlogPage() {
     const [showAllBlogs, setShowAllBlogs] = useState(false);
-
-    useEffect(() => {
-        if (typeof window !== 'undefined' && window.WOW) {
-            new window.WOW().init();
-        }
-    }, []);
 
     return (
         <ClientOnly>
@@ -84,7 +78,6 @@ export default function BlogPage() {
                         title="Latest Blogs"
                         description="Stay updated with our latest insights and articles"
                         showBrowseAll={false}
-                        category={null}
                         limit={showAllBlogs ? blogs.length : 6}
                     />
                     <div className="container px-4 px-lg-5">
