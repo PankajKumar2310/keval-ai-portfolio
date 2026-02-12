@@ -91,11 +91,11 @@ export default function AboutPage() {
           >
             <div className="container">
               <div className="page-heading">
-                <div className="breadcrumb-sub-title text-start">
+                <div className="breadcrumb-sub-title text-center">
                   <h1 className="wow fadeInUp" data-wow-delay=".3s" style={{ fontSize: 'clamp(2.5rem, 10vw, 4rem)', fontWeight: 'bold' }}>
                     about us
                   </h1>
-                   <ul className="breadcrumb-items wow fadeInUp text-start" data-wow-delay=".5s">
+                   <ul className="breadcrumb-items wow fadeInUp text-center" data-wow-delay=".5s">
                   <li>
                     <Link href="/">
                      <i className="fa-regular fa-house text-white" style={{ color: "#fff" }}></i>

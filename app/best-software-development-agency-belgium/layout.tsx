@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Best Software Development Agency in Belgium | Keval AI',
     description:
-        'Keval AI is a top software development agency in Belgium, delivering custom software, web, and AI solutions for Belgian and European businesses.',
+        'Keval AI is a top software development agency serving Belgium, delivering custom software, automation, and digital solutions to help your business grow and succeed.',
     alternates: {
-        canonical: 'https://www.kevalai.com/software-development-agency-belgium',
+        canonical: 'https://www.kevalai.com/best-software-development-agency-belgium',
     },
 };
 

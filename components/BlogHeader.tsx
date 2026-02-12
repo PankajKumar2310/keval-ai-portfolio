@@ -11,7 +11,7 @@ export default function BlogHeader() {
 
     return (
         <header style={{ background: '#fff', padding: '20px 0' }}>
-            <div className="container">
+            <div className="container" style={{ marginTop: '50px' }}>
                 <div className="d-flex justify-content-center align-items-center position-relative">
                     <nav className="d-none d-md-block">
                         <ul className="d-flex list-unstyled m-0" style={{ gap: '30px' }}>
@@ -37,11 +37,11 @@ export default function BlogHeader() {
                         <i className="fa-solid fa-bars" style={{ fontSize: '24px', color: '#000', cursor: 'pointer' }}></i>
                     </div>
 
-                    <div style={{ position: 'absolute', right: 0 }}>
+                    {/* <div style={{ position: 'absolute', right: 0 }}>
                         <button className="border-0 bg-transparent">
                             <i className="fa-regular fa-magnifying-glass" style={{ fontSize: '20px', color: '#000' }}></i>
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

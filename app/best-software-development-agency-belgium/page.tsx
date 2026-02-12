@@ -19,8 +19,11 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                     <section
                         className="belgium-hero-section"
                         style={{
-                            backgroundColor: '#0d1117',
-                            minHeight: '60vh',
+                            backgroundImage: 'url(/best-agency-images/best2.png)',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            minHeight: '80vh',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
@@ -291,6 +294,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                         className="section-padding"
                         style={{
                             backgroundColor: '#ffffff',
+                            paddingTop: '20px',
                         }}
                     >
                         <div className="container">
@@ -301,11 +305,14 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         className="wow fadeInUp belgium-image-box"
                                         data-wow-delay=".2s"
                                         style={{
-                                            backgroundColor: '#1a1f26',
+                                            backgroundImage: 'url(/best-agency-images/kaval1.jpeg)',
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                            backgroundRepeat: 'no-repeat',
                                             borderRadius: '12px',
                                             padding: '40px',
-                                            marginBottom: '40px',
-                                            minHeight: '300px',
+                                            marginBottom: '20px',
+                                            minHeight: '500px',
                                             display: 'flex',
                                             alignItems: 'flex-end',
                                             justifyContent: 'center',
@@ -314,7 +321,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         <style jsx>{`
                                             @media (min-width: 768px) {
                                                 .belgium-image-box {
-                                                    min-height: 400px !important;
+                                                    min-height: 500px !important;
                                                     justify-content: center !important;
                                                 }
                                             }
@@ -326,7 +333,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         `}</style>
                                         <h2
                                             style={{
-                                                fontSize: 'clamp(1.3rem, 4vw, 2rem)',
+                                                fontSize: 'clamp(1.4rem, 4vw, 2.1rem)',
                                                 fontWeight: 'bold',
                                                 color: '#fffbfaff',
                                                 textTransform: 'uppercase',
@@ -342,13 +349,14 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
 
                                     {/* Intro Text */}
                                     <p
-                                        className="wow fadeInUp text-center"
+                                        className="wow fadeInUp"
                                         data-wow-delay=".3s"
                                         style={{
-                                            fontSize: 'clamp(14px, 2.5vw, 16px)',
+                                            fontSize: 'clamp(15px, 2.5vw, 17px)',
                                             lineHeight: '1.8',
                                             color: '#444444',
-                                            marginBottom: '40px',
+                                            marginBottom: '30px',
+                                            textAlign: 'left',
                                         }}
                                     >
                                         Belgian companies choose Keval AI because we go beyond development—we act as a long-term technology partner.
@@ -358,7 +366,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                     <div className="wow fadeInUp" data-wow-delay=".4s">
                                         <h3
                                             style={{
-                                                fontSize: 'clamp(1.1rem, 3vw, 1.5rem)',
+                                                fontSize: 'clamp(1.2rem, 3vw, 1.6rem)',
                                                 fontWeight: 'bold',
                                                 color: '#1E1E1E',
                                                 textTransform: 'uppercase',
@@ -388,7 +396,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                                 <li
                                                     key={index}
                                                     style={{
-                                                        fontSize: 'clamp(13px, 2vw, 15px)',
+                                                        fontSize: 'clamp(14px, 2vw, 16px)',
                                                         color: '#444444',
                                                         padding: '8px 0',
                                                         display: 'flex',
@@ -404,10 +412,10 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
 
                                         <p
                                             style={{
-                                                fontSize: 'clamp(14px, 2.5vw, 16px)',
+                                                fontSize: 'clamp(15px, 2.5vw, 17px)',
                                                 lineHeight: '1.8',
                                                 color: '#444444',
-                                                textAlign: 'center',
+                                                textAlign: 'left',
                                             }}
                                         >
                                             As a trusted software development agency in Belgium, we focus on delivering measurable business outcomes, not just code.
@@ -423,6 +431,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                         className="section-padding"
                         style={{
                             backgroundColor: '#ffffff',
+                            paddingTop: '20px',
                         }}
                     >
                         <div className="container">
@@ -433,11 +442,14 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         className="wow fadeInUp belgium-image-box-2"
                                         data-wow-delay=".2s"
                                         style={{
-                                            backgroundColor: '#1a1f26',
+                                            backgroundImage: 'url(/best-agency-images/custom.jpeg)',
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                            backgroundRepeat: 'no-repeat',
                                             borderRadius: '12px',
                                             padding: '40px',
-                                            marginBottom: '40px',
-                                            minHeight: '300px',
+                                            marginBottom: '20px',
+                                            minHeight: '400px',
                                             display: 'flex',
                                             alignItems: 'flex-end',
                                             justifyContent: 'center',
@@ -446,7 +458,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         <style jsx>{`
                                             @media (min-width: 768px) {
                                                 .belgium-image-box-2 {
-                                                    min-height: 400px !important;
+                                                    min-height: 500px !important;
                                                     justify-content: center !important;
                                                 }
                                             }
@@ -458,7 +470,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         `}</style>
                                         <h2
                                             style={{
-                                                fontSize: 'clamp(1.3rem, 4vw, 2rem)',
+                                                fontSize: 'clamp(1.4rem, 4vw, 2.1rem)',
                                                 fontWeight: 'bold',
                                                 color: '#ffffff',
                                                 textTransform: 'uppercase',
@@ -474,28 +486,30 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
 
                                     {/* Intro Text */}
                                     <p
-                                        className="wow fadeInUp text-center"
+                                        className="wow fadeInUp"
                                         data-wow-delay=".3s"
                                         style={{
-                                            fontSize: 'clamp(14px, 2.5vw, 16px)',
+                                            fontSize: 'clamp(15px, 2.5vw, 17px)',
                                             lineHeight: '1.8',
                                             color: '#444444',
-                                            marginBottom: '40px',
+                                            marginBottom: '30px',
+                                            textAlign: 'left',
                                         }}
                                     >
-                                        Every business in Belgium has unique operational challenges. That’s why Keval AI specializes in custom software solutions for Belgian businesses, not generic or off-the-shelf tools.
+                                        Every business in Belgium has unique operational challenges. That's why Keval AI specializes in custom software solutions for Belgian businesses, not generic or off-the-shelf tools.
                                     </p>
 
                                     {/* Our Custom Software Approach */}
                                     <div className="wow fadeInUp" data-wow-delay=".4s">
                                         <h3
                                             style={{
-                                                fontSize: 'clamp(1.1rem, 3vw, 1.5rem)',
+                                                fontSize: 'clamp(1.2rem, 3vw, 1.6rem)',
                                                 fontWeight: 'bold',
                                                 color: '#1E1E1E',
                                                 textTransform: 'uppercase',
                                                 letterSpacing: '0.5px',
                                                 marginBottom: '20px',
+                                                textAlign: 'center',
                                             }}
                                         >
                                             Our Custom Software Approach for Belgium
@@ -518,7 +532,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                                 <li
                                                     key={index}
                                                     style={{
-                                                        fontSize: 'clamp(13px, 2vw, 15px)',
+                                                        fontSize: 'clamp(14px, 2vw, 16px)',
                                                         color: '#444444',
                                                         padding: '8px 0',
                                                         display: 'flex',
@@ -534,10 +548,10 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
 
                                         <p
                                             style={{
-                                                fontSize: 'clamp(14px, 2.5vw, 16px)',
+                                                fontSize: 'clamp(15px, 2.5vw, 17px)',
                                                 lineHeight: '1.8',
                                                 color: '#1E1E1E',
-                                                textAlign: 'center',
+                                                textAlign: 'left',
                                             }}
                                         >
                                             From internal business systems to customer-facing platforms, we help Belgian companies build software that delivers long-term ROI.
@@ -553,6 +567,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                         className="section-padding"
                         style={{
                             backgroundColor: '#ffffff',
+                            paddingTop: '20px',
                         }}
                     >
                         <div className="container">
@@ -561,7 +576,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                     <div className="wow fadeInUp" data-wow-delay=".2s" style={{ marginBottom: '40px', textAlign: 'center' }}>
                                         <h2
                                             style={{
-                                                fontSize: 'clamp(1.5rem, 4vw, 2.2rem)',
+                                                fontSize: 'clamp(1.4rem, 4vw, 2.1rem)',
                                                 fontWeight: 'bold',
                                                 color: '#1E1E1E',
                                                 textTransform: 'uppercase',
@@ -577,7 +592,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 30px 0' }}>
                                             <li
                                                 style={{
-                                                    fontSize: 'clamp(13px, 2vw, 15px)',
+                                                    fontSize: 'clamp(14px, 2vw, 16px)',
                                                     color: '#444444',
                                                     padding: '8px 0',
                                                     display: 'flex',
@@ -591,7 +606,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                             </li>
                                         </ul>
 
-                                        <p style={{ marginBottom: '20px', color: '#1a3a5c', fontWeight: 'bold', fontSize: 'clamp(13px, 2vw, 16px)' }}>
+                                        <p style={{ marginBottom: '20px', color: '#1a3a5c', fontWeight: 'bold', fontSize: 'clamp(1.2rem, 3vw, 1.6rem)', textAlign: 'center' }}>
                                             Industries We Serve Across Belgium & Europe
                                         </p>
 
@@ -606,7 +621,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                                 'Enterprise Organizations'
                                             ].map((item, index) => (
                                                 <li key={index} style={{
-                                                    fontSize: 'clamp(13px, 2vw, 15px)',
+                                                    fontSize: 'clamp(14px, 2vw, 16px)',
                                                     color: '#444444',
                                                     padding: '8px 0',
                                                     display: 'flex',
@@ -621,10 +636,11 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         </ul>
 
                                         <p style={{
-                                            fontSize: 'clamp(13px, 2vw, 16px)',
+                                            fontSize: 'clamp(15px, 2.5vw, 17px)',
                                             lineHeight: '1.8',
-                                            color: '#1a3a5c',
+                                            color: '#444444',
                                             fontWeight: '600',
+                                            textAlign: 'left',
                                         }}>
                                             Our industry knowledge allows us to design better software solutions for Belgian and European businesses.
                                         </p>
@@ -639,6 +655,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                         className="section-padding"
                         style={{
                             backgroundColor: '#ffffff',
+                            paddingTop: '20px',
                         }}
                     >
                         <div className="container">
@@ -647,7 +664,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                     <div className="wow fadeInUp" data-wow-delay=".2s" style={{ marginBottom: '40px', textAlign: 'center' }}>
                                         <h2
                                             style={{
-                                                fontSize: 'clamp(1.5rem, 4vw, 2.2rem)',
+                                                fontSize: 'clamp(1.4rem, 4vw, 2.1rem)',
                                                 fontWeight: 'bold',
                                                 color: '#1E1E1E',
                                                 textTransform: 'uppercase',
@@ -662,13 +679,13 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
 
                                     <div className="wow fadeInUp" data-wow-delay=".3s">
                                         <div style={{ marginBottom: '30px' }}>
-                                            <p style={{ fontSize: 'clamp(14px, 2vw, 16px)', lineHeight: '1.8', color: '#444444', marginBottom: '20px' }}>
+                                            <p style={{ fontSize: 'clamp(15px, 2.5vw, 17px)', lineHeight: '1.8', color: '#444444', marginBottom: '20px', textAlign: 'left' }}>
                                                 Keval AI proudly works with Belgian and European businesses through a remote-first delivery model, ensuring seamless collaboration and reliable execution.
                                             </p>
-                                            <p style={{ fontSize: 'clamp(14px, 2vw, 16px)', lineHeight: '1.8', color: '#444444', marginBottom: '20px' }}>
+                                            <p style={{ fontSize: 'clamp(15px, 2.5vw, 17px)', lineHeight: '1.8', color: '#444444', marginBottom: '20px', textAlign: 'left' }}>
                                                 We actively support companies across Belgium, including Brussels, Antwerp, and Ghent, as well as clients throughout the European Union.
                                             </p>
-                                            <p style={{ fontSize: 'clamp(14px, 2vw, 16px)', lineHeight: '1.8', color: '#1E1E1E', fontWeight: 'bold' }}>
+                                            <p style={{ fontSize: 'clamp(1.2rem, 3vw, 1.6rem)', lineHeight: '1.8', color: '#1E1E1E', fontWeight: 'bold', textAlign: 'center' }}>
                                                 Our teams operate with full European time zone compatibility, ensuring:
                                             </p>
                                         </div>
@@ -681,7 +698,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                                 'Smooth Project Coordination For EU Businesses'
                                             ].map((item, index) => (
                                                 <li key={index} style={{
-                                                    fontSize: 'clamp(13px, 2vw, 15px)',
+                                                    fontSize: 'clamp(14px, 2vw, 16px)',
                                                     color: '#444444',
                                                     padding: '6px 0',
                                                     display: 'flex',
@@ -695,10 +712,11 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         </ul>
 
                                         <p style={{
-                                            fontSize: 'clamp(13px, 2vw, 15px)',
+                                            fontSize: 'clamp(15px, 2.5vw, 17px)',
                                             lineHeight: '1.8',
-                                            color: '#1a3a5c',
-                                            fontWeight: '600'
+                                            color: '#444444',
+                                            fontWeight: '600',
+                                            textAlign: 'left',
                                         }}>
                                             This remote delivery model allows Keval AI to serve Belgium and European clients efficiently, without compromising quality or responsiveness.
                                         </p>
@@ -713,6 +731,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                         className="section-padding"
                         style={{
                             backgroundColor: '#ffffff',
+                            paddingTop: '20px',
                         }}
                     >
                         <div className="container">
@@ -721,7 +740,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                     <div className="wow fadeInUp" data-wow-delay=".2s" style={{ marginBottom: '40px', textAlign: 'center' }}>
                                         <h2
                                             style={{
-                                                fontSize: 'clamp(1.5rem, 4vw, 2.2rem)',
+                                                fontSize: 'clamp(1.4rem, 4vw, 2.1rem)',
                                                 fontWeight: 'bold',
                                                 color: '#1E1E1E',
                                                 textTransform: 'uppercase',
@@ -735,20 +754,22 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
 
                                     <div className="wow fadeInUp" data-wow-delay=".3s">
                                         <p style={{
-                                            fontSize: 'clamp(14px, 2vw, 16px)',
+                                            fontSize: 'clamp(15px, 2.5vw, 17px)',
                                             lineHeight: '1.8',
                                             color: '#444444',
-                                            marginBottom: '30px'
+                                            marginBottom: '30px',
+                                            textAlign: 'left',
                                         }}>
                                             Belgian businesses choose Keval AI because we understand both technology and business execution.
                                         </p>
 
                                         <p style={{
-                                            fontSize: 'clamp(14px, 2vw, 16px)',
+                                            fontSize: 'clamp(1.2rem, 3vw, 1.6rem)',
                                             fontWeight: 'bold',
                                             color: '#1E1E1E',
                                             marginBottom: '20px',
-                                            textTransform: 'uppercase'
+                                            textTransform: 'uppercase',
+                                            textAlign: 'center',
                                         }}>
                                             Reasons Belgian & European Clients Trust Keval AI
                                         </p>
@@ -762,7 +783,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                                 'Long-Term Support And Partnership Mindset'
                                             ].map((item, index) => (
                                                 <li key={index} style={{
-                                                    fontSize: 'clamp(13px, 2vw, 15px)',
+                                                    fontSize: 'clamp(14px, 2vw, 16px)',
                                                     color: '#444444',
                                                     padding: '8px 0',
                                                     display: 'flex',
@@ -776,10 +797,11 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         </ul>
 
                                         <p style={{
-                                            fontSize: 'clamp(13px, 2vw, 15px)',
+                                            fontSize: 'clamp(15px, 2.5vw, 17px)',
                                             lineHeight: '1.8',
-                                            color: '#1a3a5c',
-                                            fontWeight: '600'
+                                            color: '#444444',
+                                            fontWeight: '600',
+                                            textAlign: 'left',
                                         }}>
                                             We work as an extension of your internal team in Belgium, not just an external vendor.
                                         </p>
@@ -794,6 +816,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                         className="section-padding"
                         style={{
                             backgroundColor: '#ffffff',
+                            paddingTop: '20px',
                         }}
                     >
                         <div className="container">
@@ -801,9 +824,9 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                             <div className="wow fadeInUp" data-wow-delay=".2s" style={{ marginBottom: '50px', textAlign: 'center' }}>
                                 <h2
                                     style={{
-                                        fontSize: 'clamp(1.5rem, 4vw, 2.2rem)',
+                                        fontSize: 'clamp(1.4rem, 4vw, 2.1rem)',
                                         fontWeight: 'bold',
-                                        color: '#FF6B35',
+                                        color: '#1E1E1E',
                                         textTransform: 'uppercase',
                                         letterSpacing: '1px',
                                         marginBottom: '20px',
@@ -814,12 +837,12 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                 </h2>
                                 <p
                                     style={{
-                                        fontSize: 'clamp(14px, 2vw, 18px)',
-                                        color: '#1a3a5c',
+                                        fontSize: 'clamp(15px, 2.5vw, 17px)',
+                                        color: '#444444',
                                         fontWeight: '600',
                                         maxWidth: '800px',
                                         margin: '0 auto',
-                                        lineHeight: '1.6'
+                                        lineHeight: '1.8'
                                     }}
                                 >
                                     Our development process is designed to meet the expectations of Belgian and European companies.
@@ -1011,6 +1034,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                         className="section-padding"
                         style={{
                             backgroundColor: '#ffffff',
+                            paddingTop: '20px',
                         }}
                     >
                         <div className="container">
@@ -1033,10 +1057,11 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
 
                                     <div className="wow fadeInUp" data-wow-delay=".3s">
                                         <p style={{
-                                            fontSize: 'clamp(14px, 2vw, 16px)',
+                                            fontSize: 'clamp(16px, 2.5vw, 18px)',
                                             fontWeight: '600',
-                                            color: '#1a3a5c',
-                                            marginBottom: '20px'
+                                            color: '#444444',
+                                            marginBottom: '20px',
+                                            textAlign: 'left',
                                         }}>
                                             Keval AI provides software development services across Belgium, including:
                                         </p>
@@ -1050,7 +1075,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                                 'Liège'
                                             ].map((item, index) => (
                                                 <li key={index} style={{
-                                                    fontSize: 'clamp(13px, 2vw, 15px)',
+                                                    fontSize: 'clamp(15px, 2vw, 17px)',
                                                     color: '#444444',
                                                     padding: '6px 0',
                                                     display: 'flex',
@@ -1065,10 +1090,11 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         </ul>
 
                                         <p style={{
-                                            fontSize: 'clamp(13px, 2vw, 15px)',
+                                            fontSize: 'clamp(16px, 2.5vw, 18px)',
                                             lineHeight: '1.8',
-                                            color: '#1a3a5c',
-                                            fontWeight: '600'
+                                            color: '#444444',
+                                            fontWeight: '600',
+                                            textAlign: 'left',
                                         }}>
                                             We also work with European businesses across the EU, supporting cross-border operations and international growth.
                                         </p>
@@ -1083,6 +1109,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                         className="section-padding"
                         style={{
                             backgroundColor: '#ffffff',
+                            paddingTop: '20px',
                         }}
                     >
                         <div className="container">
@@ -1091,7 +1118,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                     <div className="wow fadeInUp" data-wow-delay=".2s" style={{ marginBottom: '40px', textAlign: 'center' }}>
                                         <h2
                                             style={{
-                                                fontSize: 'clamp(1.4rem, 4vw, 2rem)', // Slightly smaller to fit long title
+                                                fontSize: 'clamp(1.5rem, 4vw, 2.2rem)',
                                                 fontWeight: 'bold',
                                                 color: '#1E1E1E',
                                                 textTransform: 'uppercase',
@@ -1106,10 +1133,11 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
 
                                     <div className="wow fadeInUp" data-wow-delay=".3s">
                                         <p style={{
-                                            fontSize: 'clamp(14px, 2vw, 16px)',
+                                            fontSize: 'clamp(16px, 2.5vw, 18px)',
                                             lineHeight: '1.8',
                                             color: '#444444',
-                                            marginBottom: '20px'
+                                            marginBottom: '20px',
+                                            textAlign: 'left',
                                         }}>
                                             As a modern software development agency in Belgium, we build solutions that are:
                                         </p>
@@ -1122,7 +1150,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                                 'Secure And Scalable'
                                             ].map((item, index) => (
                                                 <li key={index} style={{
-                                                    fontSize: 'clamp(13px, 2vw, 15px)',
+                                                    fontSize: 'clamp(15px, 2vw, 17px)',
                                                     color: '#444444',
                                                     padding: '6px 0',
                                                     display: 'flex',
@@ -1137,10 +1165,11 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         </ul>
 
                                         <p style={{
-                                            fontSize: 'clamp(13px, 2vw, 16px)',
+                                            fontSize: 'clamp(16px, 2.5vw, 18px)',
                                             lineHeight: '1.8',
-                                            color: '#1a3a5c',
-                                            fontWeight: '600'
+                                            color: '#444444',
+                                            fontWeight: '600',
+                                            textAlign: 'left',
                                         }}>
                                             Our platforms are designed to perform well in Google search, AI answer engines, and future digital ecosystems.
                                         </p>
@@ -1241,6 +1270,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                         className="section-padding"
                         style={{
                             backgroundColor: '#ffffff',
+                            paddingTop: '20px',
                             paddingBottom: '0'
                         }}
                     >
@@ -1250,7 +1280,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                     <div className="wow fadeInUp" data-wow-delay=".2s" style={{ marginBottom: '40px', textAlign: 'center' }}>
                                         <h2
                                             style={{
-                                                fontSize: 'clamp(1.4rem, 4vw, 2rem)',
+                                                fontSize: 'clamp(1.5rem, 4vw, 2.2rem)',
                                                 fontWeight: 'bold',
                                                 color: '#1E1E1E',
                                                 textTransform: 'uppercase',
@@ -1265,19 +1295,21 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         </h2>
 
                                         <p style={{
-                                            fontSize: 'clamp(13px, 2vw, 15px)',
+                                            fontSize: 'clamp(16px, 2.5vw, 18px)',
                                             fontWeight: '600',
-                                            color: '#1a3a5c',
-                                            marginBottom: '20px'
+                                            color: '#444444',
+                                            marginBottom: '20px',
+                                            textAlign: 'left',
                                         }}>
-                                            If you’re looking for a reliable, experienced, and future-ready software development agency in Belgium, Keval AI is ready to partner with you.
+                                            If you're looking for a reliable, experienced, and future-ready software development agency in Belgium, Keval AI is ready to partner with you.
                                         </p>
 
                                         <p style={{
-                                            fontSize: 'clamp(13px, 2vw, 15px)',
+                                            fontSize: 'clamp(16px, 2.5vw, 18px)',
                                             fontWeight: '600',
-                                            color: '#1a3a5c',
-                                            marginBottom: '20px'
+                                            color: '#444444',
+                                            marginBottom: '20px',
+                                            textAlign: 'left',
                                         }}>
                                             We help Belgian and European businesses build software that:
                                         </p>
@@ -1285,8 +1317,8 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                         <ul style={{
                                             listStyle: 'none',
                                             padding: 0,
-                                            margin: '0 auto',
-                                            display: 'inline-block',
+                                            margin: '0',
+                                            display: 'block',
                                             textAlign: 'left'
                                         }}>
                                             {[
@@ -1295,8 +1327,8 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                                                 'Delivers long-term business value'
                                             ].map((item, index) => (
                                                 <li key={index} style={{
-                                                    fontSize: 'clamp(13px, 2vw, 15px)',
-                                                    color: '#1a3a5c',
+                                                    fontSize: 'clamp(15px, 2vw, 17px)',
+                                                    color: '#444444',
                                                     padding: '6px 0',
                                                     display: 'flex',
                                                     alignItems: 'center',
@@ -1315,7 +1347,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                     </section>
 
                     {/* CONTACT CTA */}
-                    <section
+                     <section
                         className="section-padding"
                         style={{
                             backgroundColor: '#ffffff',
@@ -1363,6 +1395,7 @@ export default function SoftwareDevelopmentAgencyBelgiumPage() {
                             </div>
                         </div>
                     </section>
+
 
                     <Footer />
                 </div>
